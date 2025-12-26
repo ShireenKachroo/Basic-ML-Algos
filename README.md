@@ -54,4 +54,29 @@ P(y=1|x) = 1/{1 + e^(-z)}  where z = β₀ + β₁x₁ + β₂x₂ + ... + βₙ
 - Situations where interpretability of coefficients is not useful or necessary  
 - Regression tasks 
 
+## 3. DECISION TREE  
+
+<b> When to use: </b> For both **classification and regression tasks**. Decision Trees split data into branches based on feature values, making them useful when relationships between variables are non-linear or when interpretability is important.<br>  
+
+<b> Pros: </b>  
+- Easy to understand and visualize (tree-like structure)  
+- Handles both numerical and categorical data without much preprocessing  
+- Captures non-linear relationships effectively  
+- Requires little data preparation (no need for scaling/normalization)  
+- Can handle multi-output problems  
+- Works well as a base learner in ensemble methods<br>  
+
+<b> Cons: </b>  
+- Prone to **overfitting** if not pruned or regularized  
+- Small changes in data can lead to very different trees (high variance)  
+- Less accurate compared to ensemble methods  
+- Can create biased trees if class imbalance is not handled  
+- Not ideal for very high-dimensional datasets without feature selection<br>  
+
+<b> When not to use: </b>  
+- Very large datasets where ensemble methods perform better  
+- Situations requiring smooth predictions (trees create step-like boundaries)  
+- Highly imbalanced datasets without proper handling 
+- Tasks where stability of the model is critical
+
 
