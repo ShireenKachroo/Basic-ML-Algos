@@ -79,4 +79,30 @@ P(y=1|x) = 1/{1 + e^(-z)}  where z = β₀ + β₁x₁ + β₂x₂ + ... + βₙ
 - Highly imbalanced datasets without proper handling 
 - Tasks where stability of the model is critical
 
+### 4. RANDOM FOREST
+<b> When to use: </b>
+For both classification and regression tasks. Random Forest is an ensemble method that builds multiple decision trees and combines their outputs. Best used when you want higher accuracy and robustness compared to a single decision tree.<br>
+
+<b> Pros: </b>
+- Reduces overfitting compared to a single decision tree
+- Handles both numerical and categorical features well
+- Works well with large datasets and high-dimensional feature spaces
+- Robust to noise and outliers
+- Provides feature importance ranking
+- Can handle missing values effectively<br>
+
+<b> Cons: </b>
+- Less interpretable compared to a single decision tree (black-box nature)
+- Computationally expensive with many trees
+- Slower predictions compared to simpler models
+- Large memory usage for big forests
+- May still struggle with extreme class imbalance if not addressed<br>
+
+<b> When not to use: </b>
+- When interpretability is crucial 
+- Real-time applications requiring very fast predictions
+- Very small datasets
+- Highly imbalanced datasets without resampling or class-weight adjustments
+
+
 
