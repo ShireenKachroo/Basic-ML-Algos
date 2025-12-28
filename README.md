@@ -104,5 +104,29 @@ For both classification and regression tasks. Random Forest is an ensemble metho
 - Very small datasets
 - Highly imbalanced datasets without resampling or class-weight adjustments
 
+### 5. KNN Algorithm
+<b> When to use: </b>
+For both classification and regression tasks. KNN is a lazy learning algorithm that makes predictions based on the majority class (classification) or average value (regression) of the k nearest data points in the feature space. Best used when decision boundaries are irregular and data is not linearly separable.<br>
+
+<b> Pros: </b>
+- Simple and intuitive to understand
+- Naturally handles multi-class classification
+- Flexible: works for both classification and regression
+- Captures complex decision boundaries effectively
+  
+<b> Cons: </b>
+- Computationally expensive for large datasets
+- Sensitive to irrelevant or redundant features
+- Requires feature scaling (normalization/standardization) for meaningful distance comparisons
+- Performance depends heavily on choice of k and distance metric
+- Struggles with high-dimensional data
+- Can be biased if class imbalance is not handled properly
+  
+<b> When not to use: </b>
+- Very large datasets 
+- High-dimensional feature spaces without dimensionality reduction
+- Datasets with many irrelevant features or noise
+- Highly imbalanced datasets without resampling or weighted voting
+- Real-time applications requiring very fast predictions
 
 
