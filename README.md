@@ -130,3 +130,57 @@ For both classification and regression tasks. KNN is a lazy learning algorithm t
 - Real-time applications requiring very fast predictions
 
 
+## 6. Naïve Bayes
+
+<b> When to use: </b>  
+For **classification tasks**, especially text classification (spam detection, sentiment analysis, document categorization). Best used when features are conditionally independent given the class.<br>  
+
+<b> Formula: </b>  
+Bayes’ Theorem:  
+P(C|X) = [P(X|C) * P(C)] / P(X)  
+
+<b> Pros: </b>  
+- Very fast and efficient for large datasets  
+- Performs well in text classification and NLP tasks  
+- Requires small amount of training data  
+- Handles multi-class problems naturally  
+- Easy to implement and interpret  
+
+<b> Cons: </b>  
+- Assumes independence between features 
+- Struggles with correlated predictors  
+- Continuous variables require distribution assumptions
+- Can be biased if class imbalance is not handled  
+
+<b> When not to use: </b>  
+- Datasets with highly correlated features  
+- Complex feature interactions where independence assumption fails  
+- Regression tasks  
+- Small datasets with skewed class distributions
+  
+
+## 7. Support Vector Machine (SVM)
+
+<b> When to use: </b>  
+For **classification tasks** (and regression via SVR). Best used when data is high-dimensional and decision boundaries are complex. Works well for text classification, image recognition, and bioinformatics.<br>  
+
+<b> Pros: </b>  
+- Effective in high-dimensional spaces  
+- Works well with clear margin of separation  
+- Flexible with kernel functions for non-linear boundaries  
+- Robust to overfitting in moderate dimensions  
+- Can handle both classification and regression  
+
+<b> Cons: </b>  
+- Computationally expensive for very large datasets  
+- Requires careful tuning of kernel and parameters
+- Less interpretable compared to simpler models  
+- Sensitive to choice of kernel  
+- Struggles with noisy datasets and overlapping classes  
+
+<b> When not to use: </b>  
+- Very large datasets (training time is slow)  
+- Problems requiring high interpretability  
+- Datasets with heavy noise or overlapping classes  
+- When quick predictions are needed in real-time systems  
+
