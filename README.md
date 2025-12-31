@@ -182,5 +182,32 @@ For **classification tasks** (and regression via SVR). Best used when data is hi
 - Very large datasets (training time is slow)  
 - Problems requiring high interpretability  
 - Datasets with heavy noise or overlapping classes  
-- When quick predictions are needed in real-time systems  
+- When quick predictions are needed in real-time systems
+
+## 8. K-Means Clustering
+
+<b> When to use: </b>  
+For **unsupervised clustering** to group similar data points. Best used when clusters are roughly spherical, well-separated, and features are continuous and scaled. Common in customer segmentation, anomaly detection, and compressing/high-level summaries of data.<br>  
+
+<b> Pros: </b>  
+- Simple, fast, and scalable for large datasets  
+- Easy to implement and understand  
+- Works well when clusters are compact and similar in size  
+- Efficient with k-means++ initialization  
+- Compatible with many real-world preprocessing pipelines  
+
+<b> Cons: </b>  
+- Requires choosing the number of clusters (k)  
+- Sensitive to feature scaling and outliers  
+- Assumes spherical, equally sized clusters  
+- Can converge to local minima depending on initialization  
+- Struggles with non-convex or overlapping clusters  
+
+<b> When not to use: </b>  
+- highly overlapping clusters  
+- Datasets with significant outliers or unscaled features  
+- Categorical-only data without proper encoding  
+- When interpretability of clusters is critical and domain context is weak  
+- When the number of clusters is unknown and hard to estimate (consider Elbow/Silhouette methods first)
+
 
